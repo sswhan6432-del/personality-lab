@@ -7,7 +7,7 @@ const tests = [
   {
     id: "love",
     title: "연애 유형 테스트",
-    titleEn: "Love Archetype Test",
+    titleEn: "CouplePoint",
     description: "72문항으로 알아보는 나의 연애 성향",
     descriptionEn: "Discover your dating style through 72 questions",
     stats: "72 questions · 6 dimensions · 12 archetypes",
@@ -17,15 +17,27 @@ const tests = [
     rgb: "232, 120, 106",
   },
   {
+    id: "mbti",
+    title: "MBTI 심화 테스트",
+    titleEn: "CogniType",
+    description: "8개 인지 기능으로 알아보는 진짜 MBTI",
+    descriptionEn: "True MBTI through 8 cognitive functions",
+    stats: "72 questions · 8 functions · 16 types",
+    url: "https://mbtitest.space",
+    tags: ["인지 기능", "MBTI 심화", "성격 유형"],
+    numeral: "II",
+    rgb: "99, 102, 241",
+  },
+  {
     id: "bdsm",
     title: "BDSM 성향 테스트",
-    titleEn: "BDSM Archetype Test",
+    titleEn: "Velvet Compass",
     description: "깊이 있는 성향 분석과 아키타입 매칭",
     descriptionEn: "Deep preference analysis with archetype matching",
     stats: "72 questions · 7 dimensions · 12 archetypes",
     url: "https://bdsmtest.space",
     tags: ["성향 분석", "아키타입", "궁합 테스트"],
-    numeral: "II",
+    numeral: "III",
     rgb: "124, 111, 224",
   },
 ];
@@ -100,7 +112,7 @@ export default function HubPage() {
           className="mb-3 text-xs font-semibold uppercase tracking-[0.4em] transition-colors duration-700"
           style={{ color: themeRgb ? `rgba(${themeRgb}, 0.6)` : undefined }}
         >
-          Personality Lab
+          Archetype Lab
         </p>
         <h1 className="mb-4 text-4xl font-black text-text-primary sm:text-5xl">
           나를 알아가는 테스트
@@ -119,7 +131,7 @@ export default function HubPage() {
       </motion.div>
 
       {/* Cards */}
-      <div className="relative grid w-full max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="relative grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {tests.map((test, index) => {
           const isActive = hovered === test.id;
           const isDimmed = hovered !== null && !isActive;
@@ -233,7 +245,7 @@ export default function HubPage() {
         transition={{ delay: 1 }}
         className="relative mt-16 text-xs text-text-muted"
       >
-        &copy; {new Date().getFullYear()} Personality Lab
+        &copy; {new Date().getFullYear()} Archetype Lab
       </motion.p>
     </div>
   );
