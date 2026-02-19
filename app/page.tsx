@@ -29,14 +29,14 @@ const tests = [
     rgb: "99, 102, 241",
   },
   {
-    id: "bdsm",
-    title: "BDSM 성향 테스트",
+    id: "velvet",
+    title: "관계 성향 테스트",
     titleEn: "Velvet Compass",
-    description: "깊이 있는 성향 분석과 아키타입 매칭",
-    descriptionEn: "Deep preference analysis with archetype matching",
-    stats: "72 questions · 7 dimensions · 12 archetypes",
-    url: "https://bdsmtest.space",
-    tags: ["성향 분석", "아키타입", "궁합 테스트"],
+    description: "깊이 있는 관계 성향 분석과 아키타입 매칭",
+    descriptionEn: "Deep relationship analysis with archetype matching",
+    stats: "72 questions · 8 dimensions · 12 archetypes",
+    url: "https://velvettest.space",
+    tags: ["관계 성향", "아키타입", "궁합 테스트"],
     numeral: "III",
     rgb: "124, 111, 224",
   },
@@ -239,14 +239,21 @@ export default function HubPage() {
       </div>
 
       {/* Footer */}
-      <motion.p
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="relative mt-16 text-xs text-text-muted"
+        className="relative mt-16 flex flex-col items-center gap-3"
       >
-        &copy; {new Date().getFullYear()} Archetype Lab
-      </motion.p>
+        <div className="flex items-center gap-6">
+          <a href="/about" className="text-xs text-text-muted transition-colors hover:text-text-secondary">소개</a>
+          <a href="/privacy" className="text-xs text-text-muted transition-colors hover:text-text-secondary">개인정보처리방침</a>
+          <a href="mailto:contact@archetypelist.space" className="text-xs text-text-muted transition-colors hover:text-text-secondary">문의하기</a>
+        </div>
+        <p className="text-xs text-text-muted">
+          &copy; {new Date().getFullYear()} Archetype Lab. All rights reserved.
+        </p>
+      </motion.div>
     </div>
   );
 }
