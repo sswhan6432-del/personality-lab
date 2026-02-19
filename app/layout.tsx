@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  verification: {
+    google: "google114c8ee082555aea",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -43,6 +46,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           as="style"
           crossOrigin="anonymous"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFMPSRC9HZ" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HFMPSRC9HZ');`,
+          }}
+        />
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3056597383286208"
+          crossOrigin="anonymous"
         />
         <script
           type="application/ld+json"
