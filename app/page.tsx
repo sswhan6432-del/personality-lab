@@ -23,7 +23,7 @@ const tests = [
     description: "8개 인지 기능으로 알아보는 진짜 MBTI",
     descriptionEn: "True MBTI through 8 cognitive functions",
     stats: "72 questions · 8 functions · 16 types",
-    url: "https://mbtitest.space",
+    url: "https://mbtipoint.space",
     tags: ["인지 기능", "MBTI 심화", "성격 유형"],
     numeral: "II",
     rgb: "99, 102, 241",
