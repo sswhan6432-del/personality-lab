@@ -51,14 +51,17 @@ export default function AboutPage() {
         <section>
           <h2 className="mb-3 text-lg font-semibold text-text-primary">연락처</h2>
           <p>
-            문의사항이 있으시면 아래 이메일로 연락해주세요.
+            문의사항이 있으시면 아래로 연락해주세요.
           </p>
-          <p className="mt-2">
-            이메일:{" "}
-            <a href="mailto:contact@archetypelist.space" className="text-primary underline">
-              contact@archetypelist.space
-            </a>
-          </p>
+          <ul className="mt-2 space-y-1">
+            <li>
+              이메일:{" "}
+              <a href="mailto:sswhan6432@gmail.com" className="text-primary underline">
+                sswhan6432@gmail.com
+              </a>
+            </li>
+            <li>전화: 010-2224-6432</li>
+          </ul>
         </section>
       </div>
     </div>
