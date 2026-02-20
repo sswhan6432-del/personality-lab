@@ -64,7 +64,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="mb-3 text-lg font-semibold text-text-primary">6. 연락처</h2>
-          <p>이메일: contact@archetypelist.space</p>
+          <p>이메일: sswhan6432@gmail.com</p>
         </section>
 
         <section>

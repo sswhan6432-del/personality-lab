@@ -248,7 +248,7 @@ export default function HubPage() {
         <div className="flex items-center gap-6">
           <a href="/about" className="text-xs text-text-muted transition-colors hover:text-text-secondary">소개</a>
           <a href="/privacy" className="text-xs text-text-muted transition-colors hover:text-text-secondary">개인정보처리방침</a>
-          <a href="mailto:contact@archetypelist.space" className="text-xs text-text-muted transition-colors hover:text-text-secondary">문의하기</a>
+          <a href="mailto:sswhan6432@gmail.com" className="text-xs text-text-muted transition-colors hover:text-text-secondary">문의하기</a>
         </div>
         <p className="text-xs text-text-muted">
           &copy; {new Date().getFullYear()} Archetype Lab. All rights reserved.
