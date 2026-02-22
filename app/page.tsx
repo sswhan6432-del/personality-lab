@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AdSenseBanner from "@/components/ads/AdSenseBanner";
+import VisitorCounter from "@/components/VisitorCounter";
 
 const tests = [
   {
@@ -244,12 +245,22 @@ export default function HubPage() {
         <AdSenseBanner slot="4696559642" />
       </div>
 
+      {/* Visitor Counter */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="relative mt-16"
+      >
+        <VisitorCounter />
+      </motion.div>
+
       {/* Footer */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="relative mt-16 flex flex-col items-center gap-3"
+        className="relative mt-8 flex flex-col items-center gap-3"
       >
         <div className="flex items-center gap-6">
           <a href="/about" className="text-xs text-text-muted transition-colors hover:text-text-secondary">소개</a>
