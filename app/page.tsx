@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import AdSenseBanner from "@/components/ads/AdSenseBanner";
 
 const tests = [
   {
@@ -236,6 +237,11 @@ export default function HubPage() {
             </motion.a>
           );
         })}
+      </div>
+
+      {/* Ad */}
+      <div className="relative mt-12 w-full max-w-5xl">
+        <AdSenseBanner slot="4696559642" />
       </div>
 
       {/* Footer */}
