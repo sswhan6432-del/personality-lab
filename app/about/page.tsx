@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About - Archetype Lab",
   description: "Archetype Lab은 연애 유형, MBTI 심화, 관계 성향 등 다양한 심리 테스트를 제공합니다.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

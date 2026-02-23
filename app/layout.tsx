@@ -28,9 +28,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    canonical: siteUrl,
-  },
   verification: {
     google: "google114c8ee082555aea",
   },
